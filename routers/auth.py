@@ -27,7 +27,7 @@ def SignUp(user:UserCreateSchema,session:Session=Depends(get_session)):
         
     user_object=models.User(
         email=user.email,
-        username=user.username,
+        lga=user.lga
         password_hash=hash_password(user.password)
     )
     session.add(user_object)
