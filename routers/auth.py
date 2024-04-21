@@ -27,8 +27,11 @@ def SignUp(user:UserCreateSchema,session:Session=Depends(get_session)):
         
     user_object=models.User(
         email=user.email,
-        lga=user.lga
-        password_hash=hash_password(user.password)
+        lga=user.lga,
+        password_hash=hash_password(user.password),
+        address=user.address,
+        address_city=user.address_city,
+        role=user.role
     )
     session.add(user_object)
     session.commit()
