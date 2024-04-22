@@ -1,10 +1,10 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import Paragraph from "../text/paragraph";
 import Button from "../buttons/button";
 
 export default function NavBar() {
-    let [showMobile,setShowmobile]=useState(false)
+  let [showMobile, setShowmobile] = useState(false);
   return (
     <div class="w-full absolute py-5 max-md:px-5 px-10 flex items-center text-sm justify-between border-b-[1px] border-black top-0">
       {/* logo area */}
@@ -70,7 +70,11 @@ export default function NavBar() {
             />
           </svg>
 
-          <img src={logo} alt="" class="w-28 text-white   bg-white" />
+          <img
+            src={logo}
+            alt=""
+            class="w-28 text-white   bg-white p-5 rounded-md"
+          />
 
           {/* nav items */}
 
