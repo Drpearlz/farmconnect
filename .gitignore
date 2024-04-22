@@ -2,3 +2,5 @@ env
 .env
 *.sql
 __pycache__
+node_modules
+.vite
