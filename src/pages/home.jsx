@@ -6,7 +6,7 @@ import Intro from '../components/sections/intro'
 
 export default function Home() {
   return (
-    <div class=' '>
+    <div className=' '>
         <NavBar/>
       <Hero/>
       <Intro/>
