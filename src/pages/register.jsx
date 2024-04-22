@@ -22,7 +22,7 @@ export default function Register() {
 
   //   let { showModal } = useModal((state) => state);
   return (
-    <div className=" py-36 h-full max-sm:h-screen">
+    <div className=" py-36 h-full ">
         <NavBar/>
       {/* <Modal
         text={
@@ -33,11 +33,11 @@ export default function Register() {
       />
       <Loader /> */}
       {/* form-container */}
-      <div className="mx-auto w-1/3 flex flex-col items-center text-sm max-sm:w-full ">
+      <div className="mx-auto w-1/3 px-5 flex flex-col items-center text-sm max-sm:w-full ">
         <Link to={"/"}>
           <img src={logo} alt="" className="w-30" />
         </Link>
-        <h2 className="text-4xl font-semibold text-primary pb-3">
+        <h2 className="text-4xl font-semibold text-primary py-3 ">
           Create Account
         </h2>
         <p>
