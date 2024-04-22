@@ -35,7 +35,7 @@ export default function NavBar() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-6 h-6"
+        className="w-6 h-6 cursor-pointer md:hidden"
         onClick={() => {
           setShowmobile(!showMobile);
         }}
@@ -58,7 +58,7 @@ export default function NavBar() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6 self-end"
+            className="w-6 h-6 self-end "
             onClick={() => {
               setShowmobile(!showMobile);
             }}
