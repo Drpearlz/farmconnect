@@ -31,7 +31,7 @@ export default function ProductCard({img,price,description,farm}) {
         />
 
       </div>
-      <Button text='Order Now' styles='w-full mt-2'/>
+      <Button text='Order Now' styles='w-full mt-2 max-md:text-xs'/>
     </div>
   );
 }
