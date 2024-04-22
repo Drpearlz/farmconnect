@@ -13,11 +13,11 @@ export default function NavBar() {
       {/* nav items */}
 
       <ul class="flex gap-10 max-md:hidden">
-        <a href="">Home</a>
+        <a href="/">Home</a>
         <a href="">How it Works</a>
         <a href="">Service Area</a>
         <a href="">Information Center</a>
-        <a href="">Product</a>
+        <a href="/products">Product</a>
       </ul>
 
       {/* auth items */}
@@ -79,11 +79,11 @@ export default function NavBar() {
           {/* nav items */}
 
           <ul class="flex flex-col gap-5 ">
-            <a href="">Home</a>
+            <a href="/">Home</a>
             <a href="">How it Works</a>
             <a href="">Service Area</a>
             <a href="">Information Center</a>
-            <a href="">Product</a>
+            <a href="/products">Product</a>
           </ul>
 
           {/* auth items */}
