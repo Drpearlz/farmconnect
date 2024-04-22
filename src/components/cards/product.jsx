@@ -20,7 +20,7 @@ export default function ProductCard({img,price,description,farm}) {
       </div>
 
       {/* tags for product goes here */}
-      <div class="grid grid-cols-3 max-md:grid-cols-2 gap-5 mb-4 text-xs">
+      {/* <div class="grid grid-cols-3 max-md:grid-cols-2 gap-5 mb-4 text-xs">
         <Paragraph
           text="Vegatable"
           styles=" max-md:text-[.6rem] text-xs  p-2 max-md:p-1 text-center bg-green-100 rounded-md   "
@@ -29,7 +29,7 @@ export default function ProductCard({img,price,description,farm}) {
           text="Vegatable"
           styles=" max-md:text-[.6rem] text-xs  p-2 max-md:p-1 text-center bg-green-100 rounded-md   "
         />
-      </div>
+      </div> */}
       {/* location */}
       <div className="flex gap-10 max-md:flex-col max-md:gap-3">
 
