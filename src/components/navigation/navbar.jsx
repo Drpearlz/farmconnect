@@ -5,13 +5,13 @@ import Button from "../buttons/button";
 
 export default function NavBar() {
   return (
-    <div class="w-full absolute py-5 px-10 flex items-center text-sm justify-between border-b-[1px] border-black top-0">
+    <div class="w-full absolute py-5 max-md:px-5 px-10 flex items-center text-sm justify-between border-b-[1px] border-black top-0">
       {/* logo area */}
-      <img src={logo} alt="" class='w-28' />
+      <img src={logo} alt="" class="w-28" />
 
       {/* nav items */}
 
-      <ul class='flex gap-10 max-md:hidden'>
+      <ul class="flex gap-10 max-md:hidden">
         <a href="">Home</a>
         <a href="">How it Works</a>
         <a href="">Service Area</a>
@@ -20,10 +20,12 @@ export default function NavBar() {
       </ul>
 
       {/* auth items */}
-        <ul class='flex items-center gap-10 text-base'>
-            <Paragraph text="Login" styles="text-base"/>
-            <Button text="Register" styles="text-base"/>
-        </ul>
+      <ul class="flex items-center gap-10 text-base">
+        <a href="/login">
+          <Paragraph text="Login" styles="text-base" />
+        </a>
+        <Button text="Register" styles="text-base" />
+      </ul>
     </div>
   );
 }
