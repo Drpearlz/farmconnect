@@ -6,7 +6,7 @@ import hero from "../../assets/images/hero.png";
 
 export default function Hero() {
   return (
-    <div class=" p-10 pt-36 mb-10 h-full w-4/5 max-md:w-full max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center mx-auto ">
+    <div class=" p-10 pt-36 mb-10 h-full w-11/12 max-md:w-full max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center mx-auto ">
       <div class="w-1/2 max-md:w-full max-md:text-center">
         <Heading
           text={"FarmConnect - Your Bridge to Fresh, Locally Sourced Produce"}
@@ -26,7 +26,7 @@ export default function Hero() {
           <Button styles="text-xs w-1/3" text="Suscribe Now" primary={false} />
         </div> */}
       </div>
-      <img src={hero} alt="" class='h-full w-1/2 max-md:h-[] max-md:w-full object-contain' />
+      <img src={hero} alt="" class='h-full  w-1/2 max-md:h-[] max-md:w-full object-contain' />
     </div>
   );
 }
