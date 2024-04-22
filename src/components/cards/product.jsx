@@ -32,28 +32,7 @@ export default function ProductCard({img,price,description,farm}) {
       </div>
       {/* location */}
       <div className="flex gap-10 max-md:flex-col max-md:gap-3">
-        <div className="flex items-center text-green-500 font-medium gap-2 ">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2.5}
-            stroke="currentColor"
-            className="w-4 h-4"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-            />
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-            />
-          </svg>
-          <Paragraph text="Location" styles="text-xs" />
-        </div>
+
         {/* user profile name */}
         <div className="flex items-center text-green-500 font-medium gap-2 ">
           <svg

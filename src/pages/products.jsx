@@ -10,7 +10,7 @@ export default function Products() {
       {/* filter options */}
 
       <NavBar />
-      <div className="pt-28 flex flex-col px-10 max-md:px-5 gap-5">
+      <div className="py-28 flex flex-col px-10 max-md:px-5 gap-5">
         <Heading text={"Our Products"} styles={'text-4xl mt-4'}/>
         <ProductFillter />
         <div class=" grid grid-cols-4 max-md:grid-cols-2  gap-10">
