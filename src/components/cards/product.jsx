@@ -5,13 +5,13 @@ import Button from '../buttons/button';
 
 export default function ProductCard({img,price,description,farm}) {
   return (
-    <div class="">
+    <div className="">
       <img
         src={imgg}
         alt=""
-        class="h-36 w-[300px] max-md:h-28 object-cover rounded-lg"
+        className="h-36 w-[300px] max-md:h-28 object-cover rounded-lg"
       />
-      <div class="flex justify-between items-center my-2">
+      <div className="flex justify-between items-center my-2">
         <Paragraph text="Basket" styles="font-medium max-md:text-xs" />
         <Paragraph
           text="N3000"
