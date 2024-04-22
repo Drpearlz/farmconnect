@@ -124,7 +124,7 @@ export default function Register() {
               <input type="checkbox" name="remember" id="" />
               <label htmlFor="">Remember me</label>
             </fieldset> */}
-            <Button text="Create Account" />
+            <Button text="Create Account" styles="mt-5" />
           </div>
         </form>
       </div>

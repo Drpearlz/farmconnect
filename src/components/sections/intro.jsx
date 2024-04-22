@@ -1,25 +1,40 @@
-import React from 'react'
-import Paragraph from '../text/paragraph'
-import img from '../../assets/images/intro.png'
+import React from "react";
+import Paragraph from "../text/paragraph";
+import img from "../../assets/images/intro.png";
 import img2 from "../../assets/images/intro2.png";
+import Heading from "../text/heading";
 
 export default function Intro() {
   return (
     <div class="w-full bg-white">
       <div class="p-10 flex  bg-white w-4/5 max-md:w-full mx-auto max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
         <img src={img} alt="" class="max-md:h-96 h-[600px]  object-contain" />
-        <Paragraph
-          styles="text-base max-md:text-sm  max-md:w-full"
-          text="At FarmConnect,  Dive into a World of Flavor and Nutrients Straight from the Earth to Your Plate. Savor the Difference of Locally Sourced, Organic Delights Bursting with Vibrancy and Taste. From Crisp, Colorful Vegetables to Juicy, Sun-Ripened Fruits, Every Bite Tells a Story of Sustainable Agriculture and Unmatched Quality. Join Us in Nourishing Your Body and Supporting Local Farmers. Taste the Difference, Taste the Freshness – Your Culinary Adventure Starts Here!"
-        />
+        <div>
+          <Heading
+            text={"Fresh Food Products, Direct Delivery "}
+            styles={"mb-6 text-4xl"}
+          />
+          <Paragraph
+            text="Fresh from farm to table, the true essence of nature
+ Think of a quick and fast route to Fresh-farm produce, think FarmConnect"
+          />
+        </div>
       </div>
 
-      <div class="p-10 flex flex-row-reverse w-4/5 max-md:w-full mx-auto bg-white max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
+      <div class="p-10 flex flex-row-reverse w-4/5 max-md:w-full mx-auto  bg-white max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
         <img src={img2} alt="" class="max-md:h-96 h-[600px]  object-contain" />
-        <Paragraph
-          styles="text-base max-md:text-sm  max-md:w-full"
-          text="At FarmConnect,  Dive into a World of Flavor and Nutrients Straight from the Earth to Your Plate. Savor the Difference of Locally Sourced, Organic Delights Bursting with Vibrancy and Taste. From Crisp, Colorful Vegetables to Juicy, Sun-Ripened Fruits, Every Bite Tells a Story of Sustainable Agriculture and Unmatched Quality. Join Us in Nourishing Your Body and Supporting Local Farmers. Taste the Difference, Taste the Freshness – Your Culinary Adventure Starts Here!"
-        />
+        <div>
+          <Heading text={"Everyone Should Healthy"} styles={"mb-6 text-4xl"} />
+          <Paragraph text="Fresh healthy food fuels vitality, strengthens immunity, and nurtures a balanced mind-body connection, that's what we offer you-FarmConnect" />
+        </div>
+      </div>
+
+      <div class="p-10 flex flex-col text-center w-full max-md:w-full mx-auto bg-primary text-white rounded-t-3xl max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
+        <img src={img2} alt="" class="max-md:h-96 h-[600px]  object-contain" />
+        <div>
+          <Heading text={"Everyone Should Healthy"} styles={"mb-6 text-4xl font-normal text-secondary"} />
+          <Paragraph text="Fresh healthy food fuels vitality, strengthens immunity, and nurtures a balanced mind-body connection, that's what we offer you-FarmConnect" />
+        </div>
       </div>
     </div>
   );

@@ -6,11 +6,11 @@ import hero from "../../assets/images/hero.png";
 
 export default function Hero() {
   return (
-    <div class=" p-10 pt-36 mb-10 h-full max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center w-full ">
+    <div class=" p-10 pt-36 mb-10 h-full w-4/5 max-md:w-full max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center mx-auto ">
       <div class="w-1/2 max-md:w-full max-md:text-center">
         <Heading
           text={"FarmConnect - Your Bridge to Fresh, Locally Sourced Produce"}
-          styles={"mb-10 max-md:w-full"}
+          styles={"mb-10 max-md:w-full text-6xl leading-[4rem]"}
         />
         <Paragraph text="At FarmConnect,  we believe that everyone deserves access to fresh, farm-to-fork produce. We are here to connect you directly with farmers in your area, ensuring that you receive the highest quality products while supporting local agriculture. " />
 

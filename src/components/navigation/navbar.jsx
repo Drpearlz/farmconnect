@@ -87,14 +87,14 @@ export default function NavBar() {
           </ul>
 
           {/* auth items */}
-          <ul class="flex flex-col  gap-5 text-base ">
+          <ul class="flex flex-col   gap-5 text-lg ">
             <a href="/login">
-              <Paragraph text="Login" styles="text-base" />
-            </a>
+              <Paragraph text="Login " styles="text-lg text-center text-green-100" />
+            </a> 
             <a href="/signup">
               <Button
                 text="Register"
-                styles="text-base w-full "
+                styles="text-lg w-full "
                 primary={false}
               />
             </a>
