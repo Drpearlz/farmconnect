@@ -9,9 +9,9 @@ import Button from "../buttons/button";
 export default function Intro() {
   return (
 
-    <div class="w-full bg-white">
-      <div class="p-10 flex  bg-white w-4/5 max-md:w-full mx-auto max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
-        <img src={img} alt="" class="max-md:h-96 h-[600px]  object-contain" />
+    <div className="w-full bg-white">
+      <div className="p-10 flex  bg-white w-4/5 max-md:w-full mx-auto max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
+        <img src={img} alt="" className="max-md:h-96 h-[600px]  object-contain" />
         <div>
           <Heading
             text={"Fresh Food Products, Direct Delivery "}
@@ -24,8 +24,8 @@ export default function Intro() {
         </div>
       </div>
 
-      <div class="p-10 flex flex-row-reverse w-4/5 max-md:w-full mx-auto  bg-white max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
-        <img src={img2} alt="" class="max-md:h-96 h-[600px]  object-contain" />
+      <div className="p-10 flex flex-row-reverse w-4/5 max-md:w-full mx-auto  bg-white max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
+        <img src={img2} alt="" className="max-md:h-96 h-[600px]  object-contain" />
         <div>
           <Heading
             text={"Everyone Should Access Healthy Farm Products"}
@@ -35,14 +35,14 @@ export default function Intro() {
         </div>
       </div>
 
-      <div class="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white rounded-t-3xl max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20 ">
+      <div className="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white rounded-t-3xl max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20 ">
         <img
           src={farmer}
           alt=""
-          class="max-md:h-56 h-[400px] rounded-2xl object-contain"
+          className="max-md:h-56 h-[400px] rounded-2xl object-contain"
 
         />
-        <div class="mx-auto">
+        <div className="mx-auto">
           <Heading
             text={"Connect Easily With Local Consumers"}
             styles={"mb-6 text-4xl  font-normal text-secondary"}
