@@ -6,13 +6,13 @@ import Button from "../buttons/button";
 export default function NavBar() {
   let [showMobile, setShowmobile] = useState(false);
   return (
-    <div class="w-full absolute py-5 max-md:px-5 px-10 flex items-center text-sm justify-between border-b-[1px] border-black top-0">
+    <div className="w-full absolute py-5 max-md:px-5 px-10 flex items-center text-sm justify-between border-b-[1px] border-black top-0">
       {/* logo area */}
-      <img src={logo} alt="" class="w-28" />
+      <img src={logo} alt="" className="w-28" />
 
       {/* nav items */}
 
-      <ul class="flex gap-10 max-md:hidden">
+      <ul className="flex gap-10 max-md:hidden">
         <a href="/">Home</a>
         <a href="/pending">How it Works</a>
         <a href="/pending">Service Area</a>
@@ -21,7 +21,7 @@ export default function NavBar() {
       </ul>
 
       {/* auth items */}
-      <ul class="flex items-center gap-10 text-base max-md:hidden">
+      <ul className="flex items-center gap-10 text-base max-md:hidden">
         <a href="/login">
           <Paragraph text="Login" styles="text-base" />
         </a>
@@ -50,7 +50,7 @@ export default function NavBar() {
       {/* mobile Nav */}
 
       {showMobile && (
-        <div class="h-screen md:hidden w-screen z-50 bg-primary gap-16 fixed left-0 top-0 text-white flex flex-col p-5 text-sm ">
+        <div className="h-screen md:hidden w-screen z-50 bg-primary gap-16 fixed left-0 top-0 text-white flex flex-col p-5 text-sm ">
           {/* logo area */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,12 +73,12 @@ export default function NavBar() {
           <img
             src={logo}
             alt=""
-            class="w-28 text-white   bg-white p-5 rounded-md"
+            className="w-28 text-white   bg-white p-5 rounded-md"
           />
 
           {/* nav items */}
 
-          <ul class="flex flex-col gap-5 ">
+          <ul className="flex flex-col gap-5 ">
             <a href="/">Home</a>
             <a href="/pending">How it Works</a>
             <a href="/pending">Service Area</a>
@@ -87,7 +87,7 @@ export default function NavBar() {
           </ul>
 
           {/* auth items */}
-          <ul class="flex flex-col   gap-5 text-lg ">
+          <ul className="flex flex-col   gap-5 text-lg ">
             <a href="/login">
               <Paragraph text="Login " styles="text-lg text-center text-green-100" />
             </a> 

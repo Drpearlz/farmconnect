@@ -5,6 +5,8 @@ import Login from './pages/login';
 import Register from './pages/register';
 import Products from './pages/products';
 import Pending from './pages/pending';
+import Option from './pages/option';
+import ProductPage from './pages/inprod';
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
           <Route element={<Register />} path="/signup" />
           <Route element={<Products />} path="/products" />
           <Route element={<Pending />} path="/pending" />
+          <Route element={<Option />} path="/option" />
+          <Route element={<ProductPage />} path="/prodets" />
+
 
         </Routes>
       </BrowserRouter>
