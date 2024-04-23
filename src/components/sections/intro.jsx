@@ -35,14 +35,14 @@ export default function Intro() {
         </div>
       </div>
 
-      <div className="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white rounded-t-3xl max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20 ">
+      <div className="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white max-md:rounded-t-[2rem] max-md:gap-10 max-md:p-5 max-md:py-20 items-center justify-center max-md:flex-col  gap-20 ">
         <img
           src={farmer}
           alt=""
           className="max-md:h-56 h-[400px] rounded-2xl object-contain"
 
         />
-        <div className="mx-auto">
+        <div className="mx-auto max-md:text-center">
           <Heading
             text={"Connect Easily With Local Consumers"}
             styles={"mb-6 text-4xl  font-normal text-secondary"}

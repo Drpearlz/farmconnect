@@ -6,15 +6,18 @@ import her from "../../assets/images/her.png";
 
 export default function Hero() {
   return (
-    <div className=" p-10 pt-36 mb-10 h-full max-md:flex-col max-md:p-5 max-md:pt-40 bg-white flex items-center justify-center w-full ">
+
+    <div className=" p-10 pt-36 mb-10 h-full w-11/12 mx-auto max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center  ">
+
       <div className="w-1/2 max-md:w-full max-md:text-center">
         <Heading
           text={"FarmConnect - Your Bridge to Fresh, Locally Sourced Produce"}
           styles={"mb-10 max-md:w-full text-6xl leading-[4rem]"}
         />
         <Paragraph text="At FarmConnect,  we believe that everyone deserves access to fresh, farm-to-table produce. We are here to connect you directly with farmers in your area, ensuring that you receive the highest quality products while supporting local agriculture. " />
-
+{/* 
         <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+
           <Link
             to="/signup"
             className="w-full px-5 py-2 text-sm tracking-wider text-white transition-colors duration-300 transform bg-green-800 rounded-lg lg:w-auto lg:mx-4 hover:bg-green-500 focus:outline-none focus:bg-green-500"
@@ -32,6 +35,8 @@ export default function Hero() {
           />
           <Button styles="text-xs w-1/3" text="Suscribe Now" primary={false} />
         </div> */}
+
+        <Button text="Get Started Now" styles="my-10"/>
       </div>
 
       <img src={her} alt=""  className="h-full w-1/2 max-md:h-[] max-md:w-full object-contain" />
