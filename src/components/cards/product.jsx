@@ -15,7 +15,7 @@ export default function ProductCard({img,price,description,farm}) {
         <Paragraph text="Basket" styles="font-medium max-md:text-xs" />
         <Paragraph
           text="N3000"
-          styles="font-semibold text-lg text-green-600   "
+          styles="font-semibold text-lg text-green-600 "
         />
       </div>
 

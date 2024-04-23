@@ -19,6 +19,7 @@ function App() {
           <Route element={<Register />} path="/signup" />
           <Route element={<Products />} path="/products" />
           <Route element={<Pending />} path="/pending" />
+
         </Routes>
       </BrowserRouter>
     </div>
