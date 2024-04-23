@@ -7,7 +7,7 @@ import her from "../../assets/images/her.png";
 export default function Hero() {
   return (
 
-    <div className=" p-10 pt-36 mb-10 h-full max-md:flex-col max-md:p-5 max-md:pt-40 bg-white flex items-center justify-center w-full ">
+    <div className=" p-10 pt-36 mb-10 h-full w-11/12 mx-auto max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center  ">
       <div className="w-1/2 max-md:w-full max-md:text-center">
 
         <Heading
@@ -15,7 +15,7 @@ export default function Hero() {
           styles={"mb-10 max-md:w-full text-6xl leading-[4rem]"}
         />
         <Paragraph text="At FarmConnect,  we believe that everyone deserves access to fresh, farm-to-table produce. We are here to connect you directly with farmers in your area, ensuring that you receive the highest quality products while supporting local agriculture. " />
-
+{/* 
         <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
           <input
             id="email"
@@ -26,7 +26,7 @@ export default function Hero() {
           <button className="w-full px-5 py-2 text-sm tracking-wider text-white  transition-colors duration-300 transform bg-green-800 rounded-lg lg:w-auto lg:mx-4 hover:bg-green-500 focus:outline-none focus:bg-green-500">
             Join Us
           </button>
-        </div>
+        </div> */}
 
         {/* <div className="my-10 max-md:border-none max-md:p-0  flex flex-col gap-3 text-xs   w-2/3 max-sm:w-full  p-3 border-black border-[1px] max-md:items-center rounded-md">
           <input
@@ -37,6 +37,8 @@ export default function Hero() {
           />
           <Button styles="text-xs w-1/3" text="Suscribe Now" primary={false} />
         </div> */}
+
+        <Button text="Get Started Now" styles="my-10"/>
       </div>
 
       <img
