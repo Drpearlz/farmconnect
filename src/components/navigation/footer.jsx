@@ -7,7 +7,7 @@ import Paragraph from '../text/paragraph'
 
 export default function Footer() {
   return (
-    <div className="bg-primary p-5 py-10 lg:p-20 lg:grid  flex flex-wrap justify-center gap-y-10 gap-6 lg:grid-cols-4 lg:gap-20">
+    <div className="bg-primary p-3 text-sm max-md:text-xs py-10 lg:p-20 lg:grid  flex flex-wrap justify-center gap-y-10 gap-6 lg:grid-cols-4 lg:gap-20">
       <div>
         <img src={logo} alt="" className="w-48" />
         {/* contact details */}

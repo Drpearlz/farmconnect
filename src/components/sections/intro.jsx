@@ -35,7 +35,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <div className="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white max-md:rounded-t-[2rem] max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20 ">
+      <div className="py-20 px-10 flex flex-row-reverse  w-full max-md:w-full mx-auto bg-primary  text-white max-md:rounded-t-[2rem] max-md:gap-10 max-md:p-5 max-md:py-20 items-center justify-center max-md:flex-col  gap-20 ">
         <img
           src={farmer}
           alt=""
