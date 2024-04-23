@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className=" relative bg-green-50 h-full   font-jakata w-screen">
+    <div className=" relative  h-full   font-jakata w-screen">
       <BrowserRouter>
         <Routes>
           <Route element={<Home />} path="" />
