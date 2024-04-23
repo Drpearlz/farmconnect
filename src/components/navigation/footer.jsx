@@ -24,26 +24,26 @@ export default function Footer() {
 
       <div className="text-gray-300 ">
         <Paragraph text="Resources" styles="text-green-200 mb-5" />
-        <a href="">
+        <a href="/pending">
           <Paragraph text="Create Products" styles=" mb-3" />
         </a>
-        <a href="">
+        <a href="/pending">
           <Paragraph text="Buy Products" styles=" mb-3" />
         </a>
-        <a href="">
+        <a href="/pending">
           <Paragraph text="Farmers Policy" styles=" mb-3" />
         </a>
       </div>
 
       <div className="text-gray-300">
         <Paragraph text="Company" styles="text-green-200 mb-5" />
-        <a href="">
+        <a href="/pending">
           <Paragraph text="About Us" styles=" mb-3" />
         </a>
-        <a href="">
+        <a href="/pending">
           <Paragraph text="Join Our Compay" styles=" mb-3" />
         </a>
-        <a href="">
+        <a href="/pending">
           <Paragraph text="Logistic Partners" styles=" mb-3" />
         </a>
       </div>

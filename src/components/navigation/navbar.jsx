@@ -14,9 +14,9 @@ export default function NavBar() {
 
       <ul class="flex gap-10 max-md:hidden">
         <a href="/">Home</a>
-        <a href="">How it Works</a>
-        <a href="">Service Area</a>
-        <a href="">Information Center</a>
+        <a href="/pending">How it Works</a>
+        <a href="/pending">Service Area</a>
+        <a href="/pending">Information Center</a>
         <a href="/products">Product</a>
       </ul>
 
@@ -50,7 +50,7 @@ export default function NavBar() {
       {/* mobile Nav */}
 
       {showMobile && (
-        <div class="h-screen md:hidden w-screen bg-primary gap-16 fixed left-0 top-0 text-white flex flex-col p-5 text-sm ">
+        <div class="h-screen md:hidden w-screen z-50 bg-primary gap-16 fixed left-0 top-0 text-white flex flex-col p-5 text-sm ">
           {/* logo area */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,9 +80,9 @@ export default function NavBar() {
 
           <ul class="flex flex-col gap-5 ">
             <a href="/">Home</a>
-            <a href="">How it Works</a>
-            <a href="">Service Area</a>
-            <a href="">Information Center</a>
+            <a href="/pending">How it Works</a>
+            <a href="/pending">Service Area</a>
+            <a href="/pending">Information Center</a>
             <a href="/products">Product</a>
           </ul>
 
