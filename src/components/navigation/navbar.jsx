@@ -14,7 +14,7 @@ export default function NavBar() {
 
       <ul className="flex gap-10 max-md:hidden">
         <a href="/">Home</a>
-        <a href="/pending">How it Works</a>
+        <a href="/howitworks">How it Works</a>
         <a href="/pending">Service Area</a>
         <a href="/pending">Information Center</a>
         <a href="/products">Product</a>
@@ -80,7 +80,7 @@ export default function NavBar() {
 
           <ul className="flex flex-col gap-5 ">
             <a href="/">Home</a>
-            <a href="/pending">How it Works</a>
+            <a href="/howitworks">How it Works</a>
             <a href="/pending">Service Area</a>
             <a href="/pending">Information Center</a>
             <a href="/products">Product</a>

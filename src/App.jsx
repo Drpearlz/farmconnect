@@ -7,6 +7,7 @@ import Products from './pages/products';
 import Pending from './pages/pending';
 import Option from './pages/option';
 import ProductPage from './pages/inprod';
+import Hiw from './pages/hiw';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route element={<Pending />} path="/pending" />
           <Route element={<Option />} path="/option" />
           <Route element={<ProductPage />} path="/prodets" />
+          <Route element={<Hiw />} path="/howitworks" />
 
 
         </Routes>
