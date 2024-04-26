@@ -1,14 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FieldSet from "../components/fieldsets/fieldset";
 import Button from "../components/buttons/button";
 import logo from "../assets/images/logo.svg";
-import login from "../apis/login";
 import register from "../apis/register";
-import NavBar from "../components/navigation/navbar";
-// import Modal from "../../components/Modal/modal";
-// import Loader from "../../components/Modal/modalLoader";
-// import { useModal } from "../../data/store";
+import c1 from '../assets/c1.png';
 
 export default function Register() {
   let [first_name, setFname] = useState("");
@@ -20,7 +16,6 @@ export default function Register() {
   let [password, setPassword] = useState("");
   let [confirm, setConfirm] = useState("");
 
-  //   let { showModal } = useModal((state) => state);
   return (
     <div className=" py-36 h-full ">
       <NavBar />

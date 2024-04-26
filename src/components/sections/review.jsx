@@ -2,10 +2,11 @@ import React from "react";
 
 const Review = () => {
   return (
+
     <div className="w-full mt-10">
       <section className="bg-white text-black text-sm lg:text-base">
         <div className="container px-5 py-10 mx-auto">
-          <h1 className="text-3xl font-semibold text-center  capitalize lg:text-4xl ">
+          <h1 className="text-3xl font-semibold text-center capitalize lg:text-4xl ">
             What our <span className="text-green-500 ">Farmers</span> say
           </h1>
           <p className="max-w-2xl mx-auto mt-6 text-center  ">
@@ -101,6 +102,7 @@ const Review = () => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
