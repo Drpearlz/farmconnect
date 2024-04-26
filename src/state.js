@@ -9,21 +9,12 @@ import { create } from "zustand";
 
 
 export const useAuth=create(set=>({
-    isAuthenticated:localStorage.getItem('user')?true:false,
+    isAuthenticated:localStorage.getItem('token')?true:false,
     setAuth:()=>{set({ isAuthenticated: true })},
     unSet:()=>{set({ isAuthenticated: false })}
 }))
 
 
-export const useProfileUpdate=create(set=>(
-  {
-    profile:{},
-    setProfile:(data)=>{
-      set(state=>{
-        return { profile:{...state.profile, ...data} };
-      })}
-  }
-))
 
 export const useModal=create(set=>(
   {

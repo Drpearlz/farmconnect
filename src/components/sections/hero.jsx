@@ -6,16 +6,14 @@ import her from "../../assets/images/her.png";
 
 export default function Hero() {
   return (
-
     <div className=" p-10 pt-36 mb-10 h-full w-11/12 mx-auto max-md:flex-col max-md:p-5 max-md:pt-40  flex items-center justify-center  ">
       <div className="w-1/2 max-md:w-full max-md:text-center">
-
         <Heading
           text={"FarmConnect - Your Bridge to Fresh, Locally Sourced Produce"}
           styles={"mb-10 max-md:w-full text-6xl leading-[4rem]"}
         />
         <Paragraph text="At FarmConnect,  we believe that everyone deserves access to fresh, farm-to-table produce. We are here to connect you directly with farmers in your area, ensuring that you receive the highest quality products while supporting local agriculture. " />
-{/* 
+        {/* 
         <div className="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
           <input
             id="email"
@@ -38,7 +36,7 @@ export default function Hero() {
           <Button styles="text-xs w-1/3" text="Suscribe Now" primary={false} />
         </div> */}
 
-        <Button text="Get Started Now" styles="my-10"/>
+        <Button text="Get Started Now" styles="my-10" />
       </div>
 
       <img
@@ -46,7 +44,6 @@ export default function Hero() {
         alt=""
         className="h-full w-1/2 max-md:h-[] max-md:w-full object-contain"
       />
-
     </div>
   );
 }

@@ -8,10 +8,13 @@ import Button from "../buttons/button";
 
 export default function Intro() {
   return (
-
     <div className="w-full bg-white">
       <div className="p-10 flex  bg-white w-4/5 max-md:w-full mx-auto max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
-        <img src={img} alt="" className="max-md:h-96 h-[600px]  object-contain" />
+        <img
+          src={img}
+          alt=""
+          className="max-md:h-96 h-[600px]  object-contain"
+        />
         <div>
           <Heading
             text={"Fresh Food Products, Direct Delivery "}
@@ -25,7 +28,11 @@ export default function Intro() {
       </div>
 
       <div className="p-10 flex flex-row-reverse w-4/5 max-md:w-full mx-auto  bg-white max-md:text-center max-md:gap-10 max-md:p-5 items-center justify-center max-md:flex-col  gap-20">
-        <img src={img2} alt="" className="max-md:h-96 h-[600px]  object-contain" />
+        <img
+          src={img2}
+          alt=""
+          className="max-md:h-96 h-[600px]  object-contain"
+        />
         <div>
           <Heading
             text={"Everyone Should Access Healthy Farm Products"}
@@ -40,7 +47,6 @@ export default function Intro() {
           src={farmer}
           alt=""
           className="max-md:h-56 h-[400px] rounded-2xl object-contain"
-
         />
         <div className="mx-auto max-md:text-center">
           <Heading

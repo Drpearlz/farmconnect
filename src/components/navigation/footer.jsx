@@ -1,9 +1,9 @@
-import React from 'react'
-import logo from '../../assets/images/logo-white-no-bg.svg'
-import { MdEmail } from 'react-icons/md'
-import { MdPhone } from 'react-icons/md'
-import { BsLinkedin } from 'react-icons/bs'
-import Paragraph from '../text/paragraph'
+import React from "react";
+import logo from "../../assets/images/logo-white-no-bg.svg";
+import { MdEmail } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
+import Paragraph from "../text/paragraph";
 
 export default function Footer() {
   return (
@@ -63,7 +63,10 @@ export default function Footer() {
           <Paragraph text="Products" styles=" mb-3" />
         </a>
       </div>
-      <Paragraph text='Farm Connect' styles='text-5xl  font-black text-green-200'/>
+      <Paragraph
+        text="Farm Connect"
+        styles="text-5xl  font-black text-green-200"
+      />
     </div>
   );
 }

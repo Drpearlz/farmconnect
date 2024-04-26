@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FieldSet from "../components/fieldsets/fieldset";
 import Button from "../components/buttons/button";
-import logo from '../assets/images/logo.svg'
+import logo from "../assets/images/logo.svg";
 import login from "../apis/login";
 import NavBar from "../components/navigation/navbar";
 import { useAuth } from "../state";
@@ -10,12 +10,12 @@ import { useAuth } from "../state";
 // import Modal from "../../components/Modal/modal";
 // import Loader from "../../components/Modal/modalLoader";
 export default function Login() {
-//   let setAuth = useAuth((state) => state.setAuth);
+  //   let setAuth = useAuth((state) => state.setAuth);
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
   return (
     <div className=" pt-36  h-screen">
-        <NavBar/>
+      <NavBar />
       {/* <Modal
         text={"Invalid login details, check credentials"}
         showclose={true}

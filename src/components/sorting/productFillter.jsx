@@ -21,7 +21,7 @@ export default function ProductFillter() {
     "Fish Merchants ",
     "Every Agro",
     "Food Basket Farms",
-    "Tidam Farms"
+    "Tidam Farms",
   ];
   return (
     <div className="self-end">

@@ -23,7 +23,7 @@ export default function Register() {
   //   let { showModal } = useModal((state) => state);
   return (
     <div className=" py-36 h-full ">
-        <NavBar/>
+      <NavBar />
       {/* <Modal
         text={
           password == confirm
