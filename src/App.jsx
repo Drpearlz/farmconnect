@@ -7,6 +7,7 @@ import Products from "./pages/products";
 import Pending from "./pages/pending";
 import AuthRequiredRoute from "./protected_route/AuthRoute";import Option from './pages/option';
 import ProductPage from './pages/inprod';
+import ProdList from "./pages/prodlist";
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
           <Route element={<Home />} path="" />
           <Route element={<Login />} path="/login" />
           <Route element={<Register />} path="/signup" />
-          <Route element={<Products />} path="/products" />
+          <Route element={<ProdList />} path="/products" />
           <Route element={<Pending />} path="/pending" />
           <Route element={<AuthRequiredRoute />} path="/auth" />
           <Route element={<Option />} path="/option" />

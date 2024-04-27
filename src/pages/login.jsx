@@ -5,6 +5,7 @@ import Button from "../components/buttons/button";
 import logo from "../assets/images/logo.svg";
 import login from "../apis/login";
 import { useAuth } from "../state";
+import NavBar from "../components/navigation/navbar";
 
 // import { useAuth } from "../../data/store";
 // import Modal from "../../components/Modal/modal";
@@ -22,7 +23,7 @@ export default function Login() {
       />
       <Loader /> */}
       {/* form-container */}
-        <div
+        {/* <div
           className="hidden bg-cover lg:block lg:w-1/2"
           style={{
             backgroundImage: `url(${D1})`, 
@@ -39,9 +40,9 @@ export default function Login() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-      <div className="pt-36 mx-auto w-1/3 flex px-5 flex-col items-center h-full text-sm max-sm:w-full ">
+      <div className=" mx-auto w-1/3 flex px-5 flex-col items-center h-full text-sm max-sm:w-full ">
         <Link to={"/"}>
           <img src={logo} alt="" className="w-30 mb-5" />
         </Link>

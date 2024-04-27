@@ -5,6 +5,7 @@ import Button from "../components/buttons/button";
 import logo from "../assets/images/logo.svg";
 import register from "../apis/register";
 import c1 from '../assets/c1.png';
+import NavBar from "../components/navigation/navbar";
 
 export default function Register() {
   let [first_name, setFname] = useState("");

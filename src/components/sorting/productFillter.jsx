@@ -27,12 +27,12 @@ export default function ProductFillter() {
     <div className="self-end">
       {/* filter toggle */}
       <div
-        className="flex items-center p-3 bg-green-100 self-end text-green-600 rounded-full cursor-pointer"
+        className="flex items-center p-3 bg-gray-100 self-end text-gray-700 rounded-full cursor-pointer"
         onClick={() => {
           SetShowFilter(!showFilter);
         }}
       >
-        <Paragraph text="Filter Items" styles="font-semibold text-green-600" />
+        <Paragraph text="Filter Items" styles="font-medium text-sm " />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
