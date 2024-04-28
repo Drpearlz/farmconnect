@@ -6,7 +6,8 @@ let headers = new Headers();
 headers.append("Content-Type", "application/json");
 
 let register = async (data) => {
-
+  useModal.setState({modalText:"Getting your account ready"})
+  useModal.setState({modalShown:true})
   await fetch("http://127.0.0.1:8000/auth/sign-up", {
     method: "POST",
     body: JSON.stringify(data),

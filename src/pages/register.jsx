@@ -34,6 +34,7 @@ export default function Register() {
     };
     if (password != confirm) {
       useError.setState({errorText:"Passwords do not match"})
+      useError.setState({errorShown:true})
     } else {
       console.log(data);
       register(data);

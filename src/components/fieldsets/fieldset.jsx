@@ -12,6 +12,15 @@ export default function FieldSet({
 }) {
   let inputRef = useRef(null);
   let [showPassword,setShowPassword]=useState(false)
+  const handlePasswordToggle=()=>{
+      if(type == 'password'){
+        if(showPassword){
+          return 'text'
+        }
+        else{return 'password'}
+      }
+      return type
+  }
   return (
     <div className="w-full">
       <fieldset className="flex flex-col gap-2 ">
@@ -26,7 +35,7 @@ export default function FieldSet({
                 setState(e.target.value);
               }
             }}
-            type={type}
+            type={handlePasswordToggle()}
             required={required}
             className="border-[1px] bg-white rounded-md p-3 w-full"
             name={name}
@@ -37,7 +46,7 @@ export default function FieldSet({
             <span
               className="absolute right-2 text-lg cursor-pointer top-1/2 -translate-y-1/2"
               onClick={() => {
-                inputRef.current.type='text'
+                setShowPassword(!showPassword)
               }}
             >
               <IoMdEye />
