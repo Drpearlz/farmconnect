@@ -4,7 +4,7 @@ import React from "react";
 export default function Button({
   text = "",
   styles = "",
-  action,
+  action = () => {},
   primary = true,
 }) {
   //   let navigate = useNavigate();

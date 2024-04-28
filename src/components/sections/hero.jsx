@@ -3,6 +3,8 @@ import Heading from "../text/heading";
 import Paragraph from "../text/paragraph";
 import { Link } from "react-router-dom";
 import her from "../../assets/images/her.png";
+import Button from "../buttons/button";
+
 
 export default function Hero() {
   return (

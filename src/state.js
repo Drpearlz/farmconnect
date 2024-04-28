@@ -18,21 +18,13 @@ export const useAuth=create(set=>({
 
 export const useModal=create(set=>(
   {
-    modal:false,
-    showModal:()=>{
-      set({modal:true})},
-    hideModal:()=>{
-      set({modal:false})}
+    modalShown:false,
+    modalText:'Set The Modal Text Here',
   }
 ))
 
-export const useLoader = create((set) => ({
-  loader: false,
-  showLoader: () => {
-    set({ modal: true });
-  },
-  hideLoader: () => {
-    set({ modal: false });
-  },
+export const useError = create((set) => ({
+  errorShown: false,
+  errorText: "Set Error Message Here",
 }));
 

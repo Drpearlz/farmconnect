@@ -14,6 +14,12 @@ export default function Login() {
   //   let setAuth = useAuth((state) => state.setAuth);
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
+
+  let HandleLogin = (e) => {
+    e.preventDefault();
+    let data = { email: email, password: password };
+    login(data);
+  };
   return (
     <div className=" pt-36  h-screen">
       <NavBar />
@@ -23,7 +29,7 @@ export default function Login() {
       />
       <Loader /> */}
       {/* form-container */}
-        {/* <div
+      {/* <div
           className="hidden bg-cover lg:block lg:w-1/2"
           style={{
             backgroundImage: `url(${D1})`, 
@@ -59,10 +65,8 @@ export default function Login() {
           action=""
           method="post"
           className="w-full pt-5"
-          onSubmit={async (e) => {
-            e.preventDefault();
-            let data = { email: email, password: password };
-            await login(data);
+          onSubmit={(e) => {
+            HandleLogin(e);
           }}
         >
           {/* Names container */}
@@ -91,6 +95,5 @@ export default function Login() {
         </form>
       </div>
     </div>
-  
   );
 }

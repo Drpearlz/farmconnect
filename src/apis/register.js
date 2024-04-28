@@ -1,31 +1,23 @@
-import { useAuth } from "../state"
-import login from "../pages/login"
-import { useLoader,useModal } from "../state"
-let headers=new Headers
+import { useAuth } from "../state";
+import login from "../pages/login";
+import {  useModal } from "../state";
+let headers = new Headers();
 
-headers.append("Content-Type","application/json")
+headers.append("Content-Type", "application/json");
 
+let register = async (data) => {
 
-let register=async(data)=>{
-    useLoader.setState({loader:true})
-    let response = await fetch(
-      "https://groobackend-production.up.railway.app/api/signup/",
-      {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: headers,
-      }
-    );
-    if(response.status==200){
-        await login({"email":data.email,"password":data.password})
-    }
-    else{
-        useLoader.setState({ loader: false });
-        useModal.setState({ modal: true });
-
-    }
-}
-
-
+  await fetch("http://127.0.0.1:8000/auth/sign-up", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: headers,
+  })
+    .then(async (res) => {
+      console.log(await res.json());
+    })
+    .catch((e) => {
+      throw new Error("Register Failed");
+    });
+};
 
 export default register;

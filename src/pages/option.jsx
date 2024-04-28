@@ -1,8 +1,9 @@
-import React, { useState } from "react";;
-
+import React, { useEffect, useState } from "react";
+import { testRequest } from "../apis/test";
 const Option = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
+  // too much verbosity here
   const handleRegisterClick = () => {
     setModalOpen(true);
   };
@@ -11,6 +12,9 @@ const Option = () => {
     setModalOpen(false);
   };
 
+  useEffect(() => {
+    testRequest();
+  }, []);
   return (
     <div className="pt-36 h-screen">
       <div className="flex items-center justify-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5">
