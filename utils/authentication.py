@@ -55,11 +55,11 @@ def get_current_user(token:str=Depends(oauth2_scheme)):
         email=payload['sub']
         if email is None:
             raise HTTPException(status.HTTP_401_UNAUTHORIZED,detail={"error":"can't validate token"})
-    except JWTError:
+    except JWTError:    
         raise HTTPException(status.HTTP_401_UNAUTHORIZED,detail={"error":"can't validate token"})
     user_db=check_user_exists(email)
     if user_db is None:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED,detail={"error":"can't validate token"})
-    user=UserResponseSchema(email=user_db.email,username=user_db.username)
+    user=UserResponseSchema(email=user_db.email,role=user_db.role,address=user_db.address,address_city=user_db.address_city,farm_name=user_db.farm_name,first_name=user_db.first_name,last_name=user_db.last_name,lga=user_db.lga)
     return user
     

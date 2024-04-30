@@ -1,7 +1,8 @@
 from pydantic import BaseModel
-import enum
+from typing import Optional
+from enum import Enum
 
-class Role(enum):
+class Role(Enum):
     ADMIN='admin'
     BUYER='buyer'
     FARMER='farmer'
@@ -13,8 +14,17 @@ class UserCreateSchema(BaseModel):
     role:Role
     lga:str
     address_city:str
+    first_name:str
+    last_name:str
+    farm_name:Optional[str]=None
 
 
 class UserResponseSchema(BaseModel):
     email:str
-    username:str
+    address:str
+    role:Role
+    lga:str
+    address_city:str
+    first_name:str
+    last_name:str
+    farm_name:Optional[str]=None
