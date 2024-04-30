@@ -6,6 +6,7 @@ import logo from "../assets/images/logo.svg";
 import login from "../apis/login";
 import { useAuth } from "../state";
 import NavBar from "../components/navigation/navbar";
+import ErrorModal from "../components/poppups/error";
 
 // import { useAuth } from "../../data/store";
 // import Modal from "../../components/Modal/modal";
@@ -17,11 +18,12 @@ export default function Login() {
 
   let HandleLogin = (e) => {
     e.preventDefault();
-    let data = { email: email, password: password };
+    let data = { email, password };
     login(data);
   };
   return (
     <div className=" pt-36  h-screen">
+      <ErrorModal />
       <NavBar />
       {/* <Modal
         text={"Invalid login details, check credentials"}
@@ -49,9 +51,6 @@ export default function Login() {
         </div> */}
 
       <div className=" mx-auto w-1/3 flex px-5 flex-col items-center h-full text-sm max-sm:w-full ">
-        <Link to={"/"}>
-          <img src={logo} alt="" className="w-30 mb-5" />
-        </Link>
         <h2 className="text-4xl font-semibold text-primary pb-3">
           Welcome Back!
         </h2>

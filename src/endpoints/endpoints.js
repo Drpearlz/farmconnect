@@ -1,5 +1,7 @@
 const baseURL = "http://127.0.0.1:8000";
 
-export const register = baseURL + "/sign-up";
+export const signup = baseURL + "/auth/sign-up";
 
-export const login = baseURL + "/login";
+export const signin = baseURL + "/auth/login";
+
+export const get_user = baseURL + "/auth/current-user";

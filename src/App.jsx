@@ -5,10 +5,11 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 import Products from "./pages/products";
 import Pending from "./pages/pending";
-import AuthRequiredRoute from "./protected_route/AuthRoute";import Option from './pages/option';
-import ProductPage from './pages/inprod';
+import AuthRequiredRoute from "./protected_route/AuthRoute";
+import Option from "./pages/option";
+import ProductPage from "./pages/inprod";
 import ProdList from "./pages/prodlist";
-
+import DashBoard from "./pages/farmers_dashboard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,8 +26,14 @@ function App() {
           <Route element={<AuthRequiredRoute />} path="/auth" />
           <Route element={<Option />} path="/option" />
           <Route element={<ProductPage />} path="/prodets" />
-
-
+          <Route
+            element={
+              <AuthRequiredRoute>
+                <DashBoard />
+              </AuthRequiredRoute>
+            }
+            path="/user/dashboard"
+          />
         </Routes>
       </BrowserRouter>
     </div>

@@ -9,6 +9,8 @@ import NavBar from "../components/navigation/navbar";
 import { useError, useModal } from "../state";
 import ErrorModal from "../components/poppups/error";
 import ModalLoader from "../components/poppups/processingModal";
+import SuccessModal from "../components/poppups/success";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   let [first_name, setFname] = useState("");
@@ -19,6 +21,8 @@ export default function Register() {
   let [address_city, setCity] = useState("");
   let [password, setPassword] = useState("");
   let [confirm, setConfirm] = useState("");
+
+  let navigate = useNavigate();
 
   let HandleRegister = (e) => {
     e.preventDefault();
@@ -33,11 +37,11 @@ export default function Register() {
       role: "farmer",
     };
     if (password != confirm) {
-      useError.setState({errorText:"Passwords do not match"})
-      useError.setState({errorShown:true})
+      useError.setState({ errorText: "Passwords do not match" });
+      useError.setState({ errorShown: true });
     } else {
-      console.log(data);
       register(data);
+     
     }
   };
 
@@ -46,6 +50,7 @@ export default function Register() {
       <NavBar />
       <ErrorModal />
       <ModalLoader />
+      <SuccessModal />
       {/* <Modal
         text={
           password == confirm
@@ -56,7 +61,6 @@ export default function Register() {
       <Loader /> */}
       {/* form-container */}
       <div className="mx-auto w-1/2 px-5 flex flex-col items-center text-sm max-sm:w-full ">
-
         <h2 className="text-4xl font-semibold text-primary py-3 ">
           Create Account
         </h2>

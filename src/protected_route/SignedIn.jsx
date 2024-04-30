@@ -3,11 +3,11 @@ import { useAuth } from "../state";
 
 import React from "react";
 
-export default function AuthRequiredRoute({children}) {
+export default function ViewIfNotAuthenticated({ children }) {
   const isAuthenticated = useAuth((state) => state.isAuthenticated);
 
-  if (!isAuthenticated) {
-    return <Navigate to={"/login"} replace/>;
+  if (isAuthenticated) {
+    return <Navigate to={"/user/dashboard"} replace />;
   }
 
   return children;

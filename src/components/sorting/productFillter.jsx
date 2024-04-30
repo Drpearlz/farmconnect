@@ -50,7 +50,7 @@ export default function ProductFillter() {
       </div>
       {/* filter list */}
       {showFilter && (
-        <div className="bg-[rgb(0,0,0,.8)] absolute top-0 p-5 right-0 w-screen flex items-center justify-center h-screen">
+        <div className="bg-[rgb(0,0,0,.8)] fixed bottom-0 top-0 p-5 right-0 w-screen flex items-center justify-center h-screen">
           <div className="bg-white relative p-5 rounded-md lg:w-1/2 w-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
